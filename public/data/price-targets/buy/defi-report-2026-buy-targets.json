@@ -1,0 +1,179 @@
+{
+  "name": "Defi Report 2026 Buy Targets",
+  "description": "DeFi Report's token watch list for the 2026 bear market.",
+  "urls": {
+    "homepage": "https://thedefireport.io/",
+    "twitter": "https://x.com/the_defi_report",
+    "youtube": "https://www.youtube.com/@thedefireport"
+  },
+  "assets": [
+    {
+      "name": "Bitcoin",
+      "symbol": "BTC",
+      "targetPrice": 65000,
+      "coingeckoId": "bitcoin"
+    },
+    {
+      "name": "Ethereum",
+      "symbol": "ETH",
+      "targetPrice": 2200,
+      "coingeckoId": "ethereum"
+    },
+    {
+      "name": "Binance Coin",
+      "symbol": "BNB",
+      "targetPrice": 600,
+      "coingeckoId": "binancecoin"
+    },
+    {
+      "name": "Solana",
+      "symbol": "SOL",
+      "targetPrice": 90,
+      "coingeckoId": "solana"
+    },
+    {
+      "name": "Hyperliquid",
+      "symbol": "HYPE",
+      "targetPrice": 18,
+      "coingeckoId": "hyperliquid"
+    },
+    {
+      "name": "Avalanche",
+      "symbol": "AVAX",
+      "targetPrice": 11,
+      "coingeckoId": "avalanche-2"
+    },
+    {
+      "name": "Sui",
+      "symbol": "SUI",
+      "targetPrice": 0.75,
+      "coingeckoId": "sui"
+    },
+    {
+      "name": "Uniswap",
+      "symbol": "UNI",
+      "targetPrice": 3.5,
+      "coingeckoId": "uniswap"
+    },
+    {
+      "name": "Aave",
+      "symbol": "AAVE",
+      "targetPrice": 90,
+      "coingeckoId": "aave"
+    },
+    {
+      "name": "Bittensor",
+      "symbol": "TAO",
+      "targetPrice": 95,
+      "coingeckoId": "bittensor"
+    },
+    {
+      "name": "Pump.fun",
+      "symbol": "PUMP",
+      "targetPrice": 0.0015,
+      "coingeckoId": "pump-fun"
+    },
+    {
+      "name": "Kamino",
+      "symbol": "KMNO",
+      "targetPrice": 0.03,
+      "coingeckoId": "kamino"
+    },
+    {
+      "name": "Jito",
+      "symbol": "JTO",
+      "targetPrice": 0.25,
+      "coingeckoId": "jito-governance-token"
+    },
+    {
+      "name": "Jupiter",
+      "symbol": "JUP",
+      "targetPrice": 0.13,
+      "coingeckoId": "jupiter-exchange-solana"
+    },
+    {
+      "name": "Raydium",
+      "symbol": "RAY",
+      "targetPrice": 0.7,
+      "coingeckoId": "raydium"
+    },
+    {
+      "name": "DoubleZero",
+      "symbol": "2Z",
+      "targetPrice": 0.05,
+      "coingeckoId": "doublezero"
+    },
+    {
+      "name": "Bonk",
+      "symbol": "BONK",
+      "targetPrice": 0.000003,
+      "coingeckoId": "bonk"
+    },
+    {
+      "name": "Useless",
+      "symbol": "USELESS",
+      "targetPrice": 0.03,
+      "coingeckoId": "useless-3"
+    },
+    {
+      "name": "Morpho",
+      "symbol": "MORPHO",
+      "targetPrice": 0.5,
+      "coingeckoId": "morpho"
+    },
+    {
+      "name": "Ethena",
+      "symbol": "ENA",
+      "targetPrice": 0.12,
+      "coingeckoId": "ethena"
+    },
+    {
+      "name": "Worldcoin",
+      "symbol": "WLD",
+      "targetPrice": 0.35,
+      "coingeckoId": "worldcoin-wld"
+    },
+    {
+      "name": "Pendle",
+      "symbol": "PENDLE",
+      "targetPrice": 1.17,
+      "coingeckoId": "pendle"
+    },
+    {
+      "name": "Pepe",
+      "symbol": "PEPE",
+      "targetPrice": 0.000003,
+      "coingeckoId": "pepe"
+    },
+    {
+      "name": "SPX6900",
+      "symbol": "SPX",
+      "targetPrice": 0.3,
+      "coingeckoId": "spx6900"
+    },
+    {
+      "name": "Coinbase",
+      "symbol": "COIN",
+      "targetPrice": 140,
+      "coingeckoId": "coinbase-xstock"
+    },
+    {
+      "name": "Robinhood",
+      "symbol": "HOOD",
+      "targetPrice": 60,
+      "coingeckoId": "robinhood-xstock"
+    },
+    {
+      "name": "Celestia",
+      "symbol": "TIA",
+      "targetPrice": 0.4,
+      "coingeckoId": "celestia"
+    },
+    {
+      "name": "Monad",
+      "symbol": "MON",
+      "targetPrice": 0.01,
+      "coingeckoId": "monad"
+    }
+  ]
+}

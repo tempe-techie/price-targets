@@ -1,0 +1,21 @@
+{
+  "name": "Mock Sell Targets V2",
+  "description": "Mock sell targets for testing purposes.",
+  "urls": {
+    "homepage": "https://example.com"
+  },
+  "assets": [
+    {
+      "name": "Ethereum",
+      "symbol": "ETH",
+      "targetPrice": 6969,
+      "coingeckoId": "ethereum"
+    },
+    {
+      "name": "Binance Coin",
+      "symbol": "BNB",
+      "targetPrice": 1337,
+      "coingeckoId": "binancecoin"
+    }
+  ]
+}
