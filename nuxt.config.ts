@@ -9,7 +9,7 @@ export default defineNuxtConfig({
 
   runtimeConfig: {
     public: {
-      cacheMaxAgeSeconds: 3600,
+      cacheMaxAgeSeconds: 600,
       lists: {
         buy: [
           'defi-report-2026-buy-targets',
