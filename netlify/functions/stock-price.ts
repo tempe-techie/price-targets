@@ -1,4 +1,6 @@
-import yahooFinance from 'yahoo-finance2'
+import YahooFinance from 'yahoo-finance2'
+
+const yahooFinance = new YahooFinance()
 
 export default async (req: Request) => {
   const url = new URL(req.url)
