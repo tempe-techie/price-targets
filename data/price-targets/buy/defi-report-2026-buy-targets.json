@@ -155,13 +155,19 @@
       "name": "Coinbase",
       "symbol": "COIN",
       "targetPrice": 140,
-      "coingeckoId": "coinbase-xstock"
+      "yahoo-finance2": "COIN"
     },
     {
       "name": "Robinhood",
       "symbol": "HOOD",
       "targetPrice": 60,
-      "coingeckoId": "robinhood-xstock"
+      "yahoo-finance2": "HOOD"
+    },
+    {
+      "name": "Galaxy Digital",
+      "symbol": "GLXY",
+      "targetPrice": 15,
+      "yahoo-finance2": "GLXY"
     },
     {
       "name": "Celestia",

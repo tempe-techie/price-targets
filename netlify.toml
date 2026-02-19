@@ -1,6 +1,12 @@
 [build]
   publish = "dist"
   command = "npm run generate"
+  functions = "netlify/functions"
 
 [build.environment]
   NODE_VERSION = "22"
+
+[[redirects]]
+  from = "/api/stock-price"
+  to = "/.netlify/functions/stock-price"
+  status = 200

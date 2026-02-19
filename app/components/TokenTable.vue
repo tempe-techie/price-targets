@@ -39,7 +39,7 @@
           <template v-if="showActionableFirst && actionableAssets.length > 0">
             <tr
               v-for="(asset, idx) in actionableAssets"
-              :key="'a-' + asset.coingeckoId"
+              :key="'a-' + asset.symbol"
               :class="actionableRowClass"
             >
               <td class="px-4 py-3 text-gray-400">{{ idx + 1 }}</td>
@@ -70,7 +70,7 @@
             </tr>
             <tr
               v-for="(asset, idx) in nonActionableAssets"
-              :key="'n-' + asset.coingeckoId"
+              :key="'n-' + asset.symbol"
               class="bg-white dark:bg-gray-950 hover:bg-gray-50 dark:hover:bg-gray-900/50 transition-colors"
             >
               <td class="px-4 py-3 text-gray-400">{{ actionableAssets.length + idx + 1 }}</td>
@@ -92,7 +92,7 @@
           <template v-else>
             <tr
               v-for="(asset, idx) in sortedAssets"
-              :key="asset.coingeckoId"
+              :key="asset.symbol"
               class="transition-colors"
               :class="isActionable(asset)
                 ? actionableRowClass
@@ -122,6 +122,7 @@
 
 <script>
 import { formatPrice, formatMarketCap, formatPercentDiff } from '~/utils/formatPrice'
+import { assetPriceKey } from '~/utils/priceCache'
 
 export default {
   props: {
@@ -135,8 +136,8 @@ export default {
   computed: {
     sortedAssets() {
       return [...this.assets].sort((a, b) => {
-        const capA = this.prices[a.coingeckoId]?.marketCap || 0
-        const capB = this.prices[b.coingeckoId]?.marketCap || 0
+        const capA = this.prices[assetPriceKey(a)]?.marketCap || 0
+        const capB = this.prices[assetPriceKey(b)]?.marketCap || 0
         return capB - capA
       })
     },
@@ -155,8 +156,11 @@ export default {
   methods: {
     formatPrice,
     formatMarketCap,
+    priceDataFor(asset) {
+      return this.prices[assetPriceKey(asset)]
+    },
     isActionable(asset) {
-      const priceData = this.prices[asset.coingeckoId]
+      const priceData = this.priceDataFor(asset)
       if (!priceData || !priceData.price) return false
 
       if (this.type === 'buy') {
@@ -165,20 +169,20 @@ export default {
       return priceData.price >= asset.targetPrice
     },
     priceFor(asset) {
-      const priceData = this.prices[asset.coingeckoId]
+      const priceData = this.priceDataFor(asset)
       return priceData ? formatPrice(priceData.price) : '—'
     },
     marketCapFor(asset) {
-      const priceData = this.prices[asset.coingeckoId]
+      const priceData = this.priceDataFor(asset)
       return priceData ? formatMarketCap(priceData.marketCap) : '—'
     },
     diffFor(asset) {
-      const priceData = this.prices[asset.coingeckoId]
+      const priceData = this.priceDataFor(asset)
       if (!priceData || !priceData.price) return '—'
       return formatPercentDiff(priceData.price, asset.targetPrice)
     },
     diffClass(asset) {
-      const priceData = this.prices[asset.coingeckoId]
+      const priceData = this.priceDataFor(asset)
       if (!priceData || !priceData.price) return ''
 
       const diff = priceData.price - asset.targetPrice
@@ -188,7 +192,7 @@ export default {
       return diff >= 0 ? 'text-rose-600 dark:text-rose-400' : 'text-emerald-600 dark:text-emerald-400'
     },
     statusText(asset) {
-      if (!this.prices[asset.coingeckoId]?.price) return 'Loading'
+      if (!this.priceDataFor(asset)?.price) return 'Loading'
       if (this.isActionable(asset)) {
         return this.type === 'buy' ? 'Buy' : 'Sell'
       }
@@ -196,7 +200,7 @@ export default {
     },
     statusBadgeClass(asset) {
       const base = 'inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium'
-      if (!this.prices[asset.coingeckoId]?.price) {
+      if (!this.priceDataFor(asset)?.price) {
         return base + ' bg-gray-100 dark:bg-gray-800 text-gray-500 dark:text-gray-400'
       }
       if (this.isActionable(asset)) {
