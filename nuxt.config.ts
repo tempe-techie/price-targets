@@ -2,6 +2,10 @@ export default defineNuxtConfig({
   compatibilityDate: '2025-05-15',
   ssr: false,
 
+  nitro: {
+    preset: 'netlify',
+  },
+
   modules: [
     '@nuxtjs/tailwindcss',
     '@nuxtjs/color-mode',
