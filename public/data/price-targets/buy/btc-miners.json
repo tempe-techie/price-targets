@@ -1,0 +1,57 @@
+{
+  "name": "BTC Miners (Situational Awareness LP)",
+  "description": "BTC Miners that are very likely to turn into AI Data Centers (price targets are arbitrary, DYOR). These stocks were bought by Situational Awareness LP, a hedge fund by Leopold Aschenbrenner.",
+  "urls": {
+    "homepage": "https://x.com/leopoldasch"
+  },
+  "assets": [
+    {
+      "name": "IREN",
+      "symbol": "IREN",
+      "targetPrice": 50,
+      "yahoo-finance2": "IREN"
+    },
+    {
+      "name": "Cipher Digital",
+      "symbol": "CIFR",
+      "targetPrice": 25,
+      "yahoo-finance2": "CIFR"
+    },
+    {
+      "name": "Riot Platforms",
+      "symbol": "RIOT",
+      "targetPrice": 25,
+      "yahoo-finance2": "RIOT"
+    },
+    {
+      "name": "BitDeer",
+      "symbol": "BTDR",
+      "targetPrice": 20,
+      "yahoo-finance2": "BTDR"
+    },
+    {
+      "name": "Hut 8",
+      "symbol": "HUT",
+      "targetPrice": 60,
+      "yahoo-finance2": "HUT"
+    },
+    {
+      "name": "CleanSpark",
+      "symbol": "CLSK",
+      "targetPrice": 20,
+      "yahoo-finance2": "CLSK"
+    },
+    {
+      "name": "Bitfarms",
+      "symbol": "BITF",
+      "targetPrice": 6,
+      "yahoo-finance2": "BITF"
+    },
+    {
+      "name": "Core Scientific",
+      "symbol": "CORZ",
+      "targetPrice": 25,
+      "yahoo-finance2": "CORZ"
+    }
+  ]
+}

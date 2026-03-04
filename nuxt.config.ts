@@ -17,6 +17,7 @@ export default defineNuxtConfig({
       lists: {
         buy: [
           'defi-report-2026-buy-targets',
+          'btc-miners',
           //'mock-buy-targets',
         ],
         sell: [
