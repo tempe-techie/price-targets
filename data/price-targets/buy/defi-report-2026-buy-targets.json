@@ -34,7 +34,7 @@
     {
       "name": "Hyperliquid",
       "symbol": "HYPE",
-      "targetPrice": 18,
+      "targetPrice": 24,
       "coingeckoId": "hyperliquid"
     },
     {
@@ -64,7 +64,7 @@
     {
       "name": "Bittensor",
       "symbol": "TAO",
-      "targetPrice": 95,
+      "targetPrice": 105,
       "coingeckoId": "bittensor"
     },
     {
@@ -106,7 +106,7 @@
     {
       "name": "Bonk",
       "symbol": "BONK",
-      "targetPrice": 0.000003,
+      "targetPrice": 0.000005,
       "coingeckoId": "bonk"
     },
     {
@@ -136,7 +136,7 @@
     {
       "name": "Pendle",
       "symbol": "PENDLE",
-      "targetPrice": 1.17,
+      "targetPrice": 0.85,
       "coingeckoId": "pendle"
     },
     {
