@@ -180,6 +180,12 @@
       "symbol": "MON",
       "targetPrice": 0.01,
       "coingeckoId": "monad"
+    },
+    {
+      "name": "Zcash",
+      "symbol": "ZEC",
+      "targetPrice": 85,
+      "coingeckoId": "zcash"
     }
   ]
 }
