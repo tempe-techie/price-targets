@@ -92,6 +92,12 @@
       "coingeckoId": "jupiter-exchange-solana"
     },
     {
+      "name": "Lighter",
+      "symbol": "LIT",
+      "targetPrice": 0.95,
+      "coingeckoId": "lighter"
+    },
+    {
       "name": "Raydium",
       "symbol": "RAY",
       "targetPrice": 0.7,
