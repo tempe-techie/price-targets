@@ -51,3 +51,19 @@ Each list is loaded by slug; ensure the corresponding list data exists for the r
 ## Environment
 
 Optional: add a `.env` file for any environment variables. See Nuxt [runtime config](https://nuxt.com/docs/guide/going-further/runtime-config) for overriding `runtimeConfig` via `NUXT_*` env vars.
+
+| Variable | Description |
+|----------|-------------|
+| `NUXT_PUBLIC_SITE_URL` | Public site URL for Open Graph/Twitter meta tags (defaults to `https://price-targets-22.vercel.app`) |
+
+## Deploy to Vercel
+
+This app uses the [Nitro Vercel preset](https://nitro.build/deploy/providers/vercel) so Nuxt pages and the `/api/stock-price` server route deploy as Vercel serverless functions.
+
+1. Push the repository to GitHub, GitLab, or Bitbucket.
+2. Import the project in the [Vercel dashboard](https://vercel.com/new).
+3. Vercel detects Nuxt automatically. The build command is `npm run build`.
+4. Set `NUXT_PUBLIC_SITE_URL` to your production URL (for example `https://your-app.vercel.app`).
+5. Deploy.
+
+Netlify deployments continue to work via `netlify.toml`, which sets `NITRO_PRESET=netlify`.
