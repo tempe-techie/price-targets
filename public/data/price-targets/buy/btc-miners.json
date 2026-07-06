@@ -42,10 +42,10 @@
       "yahoo-finance2": "CLSK"
     },
     {
-      "name": "Bitfarms",
-      "symbol": "BITF",
+      "name": "Keel Infrastructure",
+      "symbol": "KEEL",
       "targetPrice": 6,
-      "yahoo-finance2": "BITF"
+      "yahoo-finance2": "KEEL"
     },
     {
       "name": "Core Scientific",
